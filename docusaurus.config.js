@@ -58,6 +58,22 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "getting-started",
+        path: "wiki/getting-started",
+        routeBasePath: "getting-started",
+        sidebarPath: require.resolve("./sidebars.js"),
+        // editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: true,
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -65,73 +81,49 @@ const config = {
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "Matt's Wiki",
+        hideOnScroll: false,
         logo: {
           alt: "Matt's Wiki Logo",
-          src: "img/logo.svg",
+          src: "img/otter_icon.svg",
         },
         items: [
+          // {
+          //   type: "docSidebar",
+          //   sidebarId: "tutorialSidebar",
+          //   position: "right",
+          //   label: "Tutorial",
+          // },
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
             position: "right",
+            label: "👨🏻‍🎓 WiKi",
+            items: [
+              {
+                label: "Getting Started",
+                to: "/getting-started",
+              },
+            ],
           },
+          {
+            label: "🛠Resources",
+            position: "right",
+            to: "/resources",
+          },
+          { to: "/blog", label: "Blog", position: "right" },
         ],
       },
       footer: {
         style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Matt's Wiki, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        // defaultLanguage: "markdown",
+        // additionalLanguages: ["java", "git", "nginx", "http"],
+      },
+      colorMode: {
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
     }),
 };
