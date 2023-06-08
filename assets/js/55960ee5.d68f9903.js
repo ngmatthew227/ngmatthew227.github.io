@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktinasaurus=self.webpackChunktinasaurus||[]).push([[4121],{8070:e=>{e.exports=JSON.parse('[{"label":"Demo","permalink":"/docs/tags/demo","count":2},{"label":"Getting started","permalink":"/docs/tags/getting-started","count":1}]')}}]);
