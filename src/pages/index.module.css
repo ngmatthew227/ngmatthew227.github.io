@@ -22,7 +22,6 @@
   justify-content: center;
 }
 
-
 /* ----------------------------------------------------- */
 /* Custom CSS */
 .myHeroContainer {
@@ -33,10 +32,27 @@
   background-color: #f5f4f4;
   width: 100%;
   overflow: hidden;
-  padding: 2.5rem 6rem;
+  background-image: linear-gradient(
+    180deg,
+    hsl(206deg 65% 15%) 0%,
+    hsl(196deg 39% 28%) 29%,
+    hsl(192deg 35% 37%) 42%,
+    hsl(191deg 34% 44%) 51%,
+    hsl(190deg 34% 50%) 57%,
+    hsl(190deg 36% 58%) 62%,
+    hsl(190deg 38% 66%) 66%,
+    hsl(190deg 41% 73%) 70%,
+    hsl(189deg 47% 79%) 74%,
+    hsl(189deg 54% 84%) 77%,
+    hsl(187deg 57% 87%) 81%,
+    hsl(185deg 62% 90%) 86%,
+    hsl(182deg 70% 92%) 92%,
+    hsl(178deg 92% 95%) 100%
+  );
+  /* padding: 1rem 1rem; */
 }
 .leftContainer {
-  padding: 3rem 0 0 1rem;
+  padding: 5rem 0 0 2rem;
   font-size: 40px;
   flex: 2;
 }
@@ -48,17 +64,18 @@
 .rightContainer img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: fill;
+  padding: 5rem;
 }
 
 .leftContainer_h1 {
-  color: rgb(58, 58, 58);
+  color: rgb(255, 255, 255);
   font-size: 4rem;
 }
 .leftContainer_p {
   display: flex;
   align-items: center;
-  color: #565451;
+  color: #dcd9d3;
   font-size: 1.5rem;
 }
 .buttonContainer {
