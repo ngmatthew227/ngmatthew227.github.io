@@ -8,13 +8,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Matt's Wiki",
   tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  favicon: "img/otter_icon.ico",
 
   // Set the production url of your site here
   url: "https://ngmatthew227.github.io/",
   baseUrl: "/",
   deploymentBranch: "gh-pages",
-  
+
   // GitHub Pages settings
   organizationName: "ngmatthew227",
   projectName: "ngmatthew227.github.io",
@@ -70,6 +70,19 @@ const config = {
         breadcrumbs: true,
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "java",
+        path: "wiki/java",
+        routeBasePath: "java",
+        sidebarPath: require.resolve("./sidebars.js"),
+        // editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: true,
+      },
+    ],
   ],
 
   themeConfig:
@@ -98,6 +111,10 @@ const config = {
               {
                 label: "Getting Started",
                 to: "/getting-started",
+              },
+              {
+                label: "Java",
+                to: "/java",
               },
             ],
           },
