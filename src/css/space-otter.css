@@ -37,12 +37,11 @@
 }
 
 .electron:before {
-  content: "";
+  content: '';
   width: 20%;
   height: 0;
   padding-bottom: 20%;
-  background-image: url("../../static/img/reactjs.svg"),
-    radial-gradient(circle at 100px 100px, #add4fd, #000);
+  background-image: url('../../static/img/reactjs.svg'), radial-gradient(circle at 100px 100px, #add4fd, #000);
   background-size: cover;
   transform-origin: 50% 50%;
   position: absolute;
@@ -57,8 +56,7 @@
 }
 
 .electron:nth-of-type(2)::before {
-  background-image: url("../../static/img/spring.svg"),
-    radial-gradient(circle at 100px 100px, #add4fd, #000);
+  background-image: url('../../static/img/spring.svg'), radial-gradient(circle at 100px 100px, #add4fd, #000);
   animation: rotateWithOrbit2 6s infinite linear;
 }
 
@@ -67,18 +65,19 @@
 }
 
 .electron:nth-of-type(3)::before {
-  background-image: url("../../static/img/java.svg"),
-    radial-gradient(circle at 100px 100px, #add4fd, #000);
+  background-image: url('../../static/img/java.svg'), radial-gradient(circle at 100px 100px, #add4fd, #000);
   animation: rotateWithOrbit3 6s infinite linear;
 }
 
 .nucleus {
-  width: 100%;
-  height: 100%;
+  width: 50px;
+  height: 50px;
   transform: translate(-50%, -50%);
-  background: url("../../static/img/main_otter.png");
+  box-shadow: 0 0 10px orange, 0 0 60px orange, 0 0 200px yellow, inset 0 0 80px yellow;
+  background: red;
   background-size: cover;
   position: absolute;
+  border-radius: 50%;
   top: 50%;
   left: 50%;
 }
@@ -89,66 +88,53 @@
   }
 
   100% {
-    transform: translate(-50%, -50%) rotateY(60deg) rotateX(-30deg)
-      rotate(360deg);
+    transform: translate(-50%, -50%) rotateY(60deg) rotateX(-30deg) rotate(360deg);
   }
 }
 
 @keyframes rotateWithOrbit {
   0% {
-    transform: translate(-50%, -50%) rotateZ(0deg) rotateX(30deg)
-      rotateY(-40deg) scale(0.8);
+    transform: translate(-50%, -50%) rotateZ(0deg) rotateX(30deg) rotateY(-40deg) scale(0.8);
   }
   25% {
-    transform: translate(-50%, -50%) rotateZ(-90deg) rotateX(30deg)
-      rotateY(-40deg) scale(0.6);
+    transform: translate(-50%, -50%) rotateZ(-90deg) rotateX(30deg) rotateY(-40deg) scale(0.6);
   }
   50% {
-    transform: translate(-50%, -50%) rotateZ(-180deg) rotateX(30deg)
-      rotateY(-40deg) scale(0.8);
+    transform: translate(-50%, -50%) rotateZ(-180deg) rotateX(30deg) rotateY(-40deg) scale(0.8);
   }
   75% {
-    transform: translate(-50%, -50%) rotateZ(-270deg) rotateX(30deg)
-      rotateY(-40deg) scale(1);
+    transform: translate(-50%, -50%) rotateZ(-270deg) rotateX(30deg) rotateY(-40deg) scale(1);
   }
   100% {
-    transform: translate(-50%, -50%) rotateZ(-360deg) rotateX(30deg)
-      rotateY(-40deg) scale(0.8);
+    transform: translate(-50%, -50%) rotateZ(-360deg) rotateX(30deg) rotateY(-40deg) scale(0.8);
   }
 }
 
 @keyframes orbit2 {
   0% {
-    transform: translate(-50%, -50%) rotateY(60deg) rotateX(30deg)
-      rotate(180deg);
+    transform: translate(-50%, -50%) rotateY(60deg) rotateX(30deg) rotate(180deg);
   }
 
   100% {
-    transform: translate(-50%, -50%) rotateY(60deg) rotateX(30deg)
-      rotate(540deg);
+    transform: translate(-50%, -50%) rotateY(60deg) rotateX(30deg) rotate(540deg);
   }
 }
 
 @keyframes rotateWithOrbit2 {
   0% {
-    transform: translate(-50%, -50%) rotateZ(-180deg) rotateX(-30deg)
-      rotateY(-40deg) scale(0.8);
+    transform: translate(-50%, -50%) rotateZ(-180deg) rotateX(-30deg) rotateY(-40deg) scale(0.8);
   }
   25% {
-    transform: translate(-50%, -50%) rotateZ(-270deg) rotateX(-30deg)
-      rotateY(-40deg) scale(1);
+    transform: translate(-50%, -50%) rotateZ(-270deg) rotateX(-30deg) rotateY(-40deg) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) rotateZ(-360deg) rotateX(-30deg)
-      rotateY(-40deg) scale(0.8);
+    transform: translate(-50%, -50%) rotateZ(-360deg) rotateX(-30deg) rotateY(-40deg) scale(0.8);
   }
   75% {
-    transform: translate(-50%, -50%) rotateZ(-450deg) rotateX(-30deg)
-      rotateY(-40deg) scale(0.6);
+    transform: translate(-50%, -50%) rotateZ(-450deg) rotateX(-30deg) rotateY(-40deg) scale(0.6);
   }
   100% {
-    transform: translate(-50%, -50%) rotateZ(-540deg) rotateX(-30deg)
-      rotateY(-40deg) scale(0.8);
+    transform: translate(-50%, -50%) rotateZ(-540deg) rotateX(-30deg) rotateY(-40deg) scale(0.8);
   }
 }
 
@@ -164,23 +150,18 @@
 
 @keyframes rotateWithOrbit3 {
   0% {
-    transform: translate(-50%, -50%) rotateZ(-180deg) rotateX(-80deg)
-      rotateY(0deg) scale(1);
+    transform: translate(-50%, -50%) rotateZ(-180deg) rotateX(-80deg) rotateY(0deg) scale(1);
   }
   25% {
-    transform: translate(-50%, -50%) rotateZ(-270deg) rotateX(-80deg)
-      rotateY(0deg) scale(0.8);
+    transform: translate(-50%, -50%) rotateZ(-270deg) rotateX(-80deg) rotateY(0deg) scale(0.8);
   }
   50% {
-    transform: translate(-50%, -50%) rotateZ(-360deg) rotateX(-80deg)
-      rotateY(0deg) scale(0.6);
+    transform: translate(-50%, -50%) rotateZ(-360deg) rotateX(-80deg) rotateY(0deg) scale(0.6);
   }
   75% {
-    transform: translate(-50%, -50%) rotateZ(-450deg) rotateX(-80deg)
-      rotateY(0deg) scale(0.8);
+    transform: translate(-50%, -50%) rotateZ(-450deg) rotateX(-80deg) rotateY(0deg) scale(0.8);
   }
   100% {
-    transform: translate(-50%, -50%) rotateZ(-540deg) rotateX(-80deg)
-      rotateY(0deg) scale(1);
+    transform: translate(-50%, -50%) rotateZ(-540deg) rotateX(-80deg) rotateY(0deg) scale(1);
   }
 }

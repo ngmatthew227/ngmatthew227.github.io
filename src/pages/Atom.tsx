@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "./space-otter.module.css";
 
-export default function SpaceOtter(): JSX.Element {
+export default function Atom(): JSX.Element {
   return (
     <div className="space-otter-warpper">
       <div className="atom">
