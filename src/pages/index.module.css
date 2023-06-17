@@ -53,24 +53,47 @@
 }
 .leftContainer {
   height: 100%;
-  padding: 5rem 0 0 2rem;
+  padding: 2rem 0 0 2rem;
   font-size: 40px;
   flex: 1;
 }
 .rightContainer {
-  flex: 1;
+  width: 60%;
+  text-align: center;
   height: 100%;
-  background-image: url('../../static/img/main_otter.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* min-width: 600px; */
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .rightContainer img {
-  width: 100%;
-  height: 100%;
+  position: relative;
+  top: 10%;
+  width: 300px;
+  height: 500px;
   object-fit: fill;
-  padding: 5rem;
+}
+
+@media screen and (max-width: 1090px) {
+  .rightContainer {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .rightContainer img {
+    position: relative;
+    top: 20%;
+    max-width: 278px;
+    max-height: 443px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .rightContainer {
+    display: none;
+  }
 }
 
 .leftContainer_h1 {
@@ -143,4 +166,21 @@
     align-items: center;
     flex-direction: row;
   }
+}
+
+.spaceOtterOuterWrapper {
+  position: absolute;
+  min-width: 300px;
+  min-height: 300px;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 820px) {
+  .spaceOtterOuterWrapper {
+    min-width: 250px;
+    min-height: 250px;
+    right: -10%;
+  }
+  
 }

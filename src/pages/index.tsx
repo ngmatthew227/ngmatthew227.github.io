@@ -62,10 +62,10 @@ function MyHero() {
         </div>
       </div>
       <div className={styles.rightContainer}>
-        <div style={{ position: 'relative', width: 250, height: 250 }}>
+        <div className={styles.spaceOtterOuterWrapper}>
           <Atom />
         </div>
-        <div style={{ backgroundImage: `url(${MainOtter})` }}></div>
+        <img src={MainOtter}/>
       </div>
     </div>
   );
