@@ -14,19 +14,7 @@ const svgList = [
     Svg: require('../../static/img/github.svg').default,
     color: 'black',
     link: 'https://github.com/ngmatthew227',
-  },
-  {
-    title: 'github',
-    Svg: require('../../static/img/github.svg').default,
-    color: 'black',
-    link: 'https://github.com/ngmatthew227',
-  },
-  {
-    title: 'github',
-    Svg: require('../../static/img/github.svg').default,
-    color: 'black',
-    link: 'https://github.com/ngmatthew227',
-  },
+  }
 ];
 
 interface SvgProps {

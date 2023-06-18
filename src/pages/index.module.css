@@ -90,9 +90,15 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 740px) {
   .rightContainer {
     display: none;
+  }
+  .leftContainer {
+    background-image: url("../../static/img/main_otter.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
 }
 
@@ -150,6 +156,7 @@
 .svg {
   /* font-size: 20px; */
   width: 2.5rem;
+  height: 2.5rem;
 }
 .hero_a {
   text-decoration: none;
