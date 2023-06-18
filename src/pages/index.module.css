@@ -147,11 +147,10 @@
   font-size: 0.8rem;
   color: #565451;
 }
-.svgContainer {
+.imgContainer {
   width: 13rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 .svg {
   /* font-size: 20px; */

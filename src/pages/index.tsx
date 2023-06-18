@@ -5,17 +5,8 @@ import React from 'react';
 import otter from '../../static/img/otter_icon.png';
 import Atom from './Atom';
 import MainOtter from '../../static/img/main_otter.png';
-
+import SocialLinks from './SocialLinks';
 import styles from './index.module.css';
-
-const svgList = [
-  {
-    title: 'github',
-    Svg: require('../../static/img/github.svg').default,
-    color: 'black',
-    link: 'https://github.com/ngmatthew227',
-  }
-];
 
 interface SvgProps {
   Svg: any;
@@ -27,7 +18,7 @@ interface SvgProps {
 const Svg = ({ Svg, color, title, link }: SvgProps) => {
   return (
     <a href={link} target='_blank'>
-      <Svg className={styles.svg} style={{ fill: color }} />
+      <Svg className={styles.svg} />
     </a>
   );
 };
@@ -42,10 +33,8 @@ function MyHero() {
           <img src={otter} />
         </p>
         <div className={styles.buttonContainer}>
-          <div className={styles.svgContainer}>
-            {svgList.map((item, index) => {
-              return <Svg {...item} key={item.title} />;
-            })}
+          <div className={styles.imgContainer}>
+            <SocialLinks />
           </div>
         </div>
       </div>
@@ -53,7 +42,7 @@ function MyHero() {
         <div className={styles.spaceOtterOuterWrapper}>
           <Atom />
         </div>
-        <img src={MainOtter}/>
+        <img src={MainOtter} />
       </div>
     </div>
   );
