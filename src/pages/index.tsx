@@ -37,6 +37,9 @@ function MyHero() {
             <SocialLinks />
           </div>
         </div>
+        <div className={styles.mobileAtomWrapper}>
+          <Atom />
+        </div>
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.spaceOtterOuterWrapper}>

@@ -90,15 +90,26 @@
   }
 }
 
+.mobile-atom-wrapper {
+  display: none;
+}
+
 @media screen and (max-width: 740px) {
   .rightContainer {
     display: none;
   }
   .leftContainer {
-    background-image: url("../../static/img/main_otter.png");
+    background-image: url('../../static/img/main_otter.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: right bottom;
+  }
+
+  .mobileAtomWrapper {
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: relative;
   }
 }
 
@@ -188,5 +199,4 @@
     min-height: 250px;
     right: -10%;
   }
-  
 }

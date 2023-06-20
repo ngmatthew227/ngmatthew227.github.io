@@ -162,3 +162,14 @@
     transform: translate(-50%, -50%) rotateZ(-540deg) rotateX(-80deg) rotateY(0deg) scale(1);
   }
 }
+
+@media screen and (max-width: 740px) {
+  .nucleus {
+    height: 30px;
+    width: 30px;
+  }
+
+  .electron {
+    border: 0.5px solid #4a4444;
+  }
+}
